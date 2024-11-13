@@ -1,7 +1,7 @@
 {{  config(
         post_hook = [
-        "drop table if exists EDW_PREPROD.EDW.RETAIL_CALENDAR",
-        "drop table if exists EDW_PREPROD.EDW.CALENDAR_BASE"
+        "drop table if exists EDW_PROD.EDW.RETAIL_CALENDAR",
+        "drop table if exists EDW_PROD.EDW.CALENDAR_BASE"
     ]
 ) }}
 
