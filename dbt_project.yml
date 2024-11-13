@@ -39,6 +39,7 @@ models:
   my_new_project:
     STAGING:
       +materialized: view
+      +schema: STAGING
     EDW:
       +materialized: table
       +schema: EDW
