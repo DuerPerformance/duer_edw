@@ -23,13 +23,13 @@ WITH Source_Data AS (
     FROM {{ref('SAP_OWHS')}}  W
 
 
-    INNER JOIN EDW_PREPROD.edw.lkp_country LCO
+    INNER JOIN {{ref('DIM_COUNTRIES')}} LCO
         ON W."country" = LCO.Country
 
-    INNER JOIN EDW_PREPROD.edw.lkp_state LS
+    INNER JOIN {{ref('DIM_STATES')}} LS
         ON W."state" = LS.State
         
-    INNER JOIN EDW_PREPROD.edw.lkp_city LCI
+    INNER JOIN {{ref('DIM_CITIES')}} LCI
         ON W."city" = LCI.City
 
 
