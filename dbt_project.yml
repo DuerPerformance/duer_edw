@@ -46,3 +46,6 @@ models:
     SEMANTIC:
       +materialized: table
       +schema: SEMANTIC
+    CALENDAR:
+      +materialized: table
+      +schema: SEMANTIC
